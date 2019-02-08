@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="logo_color">#FFFF0F</color>
+    <color name="header_row_color">#C80000</color>
+    <color name="version_color">#f0f0f0</color>
+    <color name="version_bkgrd">#1a1a48</color>
+    <color name="title_color">#f0f0f0</color>
+    <color name="table_color">#f0f0f0</color>
+    <color name="title_glow">#F00</color>
+    <color name="menu_color">#FFFF0F</color>
+    <color name="menu_glow">#F00</color>
+
+    <color name="semitrans">#80000000</color>
+    <color name="progress_start">#22220000</color>
+    <color name="progress_end">#11110000</color>
+
+    <color name="black">#000000</color>
+    <color name="black444">#444444</color>
+    <color name="white">#ffffff</color>
+    <color name="transblack">#80000000</color>
+    <color name="transwhite">#20ffffff</color>
+    <color name="transwhite2">#40ffffff</color>
+    <color name="transparent">#10ffffff</color>
+
+    <color name="orange">#ff9711</color>
+
+    <color name="rgb000">#000000</color>
+    <color name="rgb222">#222222</color>
+    <color name="rgb444">#444444</color>
+    <color name="rgb666">#666666</color>
+    <color name="rgb999">#999999</color>
+    <color name="rgbbbb">#BBBBBB</color>
+    <color name="rgbddd">#DDDDDD</color>
+    <color name="rgbeee">#EEEEEE</color>
+    <color name="rgbfff">#FFFFFF</color>
+    <color name="rgbf00">#FF0000</color>
+    <color name="rgb0f0">#00FF00</color>
+    <color name="rgb00f">#0000FF</color>
+    <color name="rgb0ff">#00FFFF</color>
+    <color name="rgb0062ae">#0062AE</color>
+    <color name="rgb5d9356">#5D9356</color>
+    <color name="rgbfed9b0">#FED9B0</color>
+    <color name="rgbf7f6a6">#F7F6A6</color>
+    <color name="rgb685446">#685446</color>
+    <color name="rgbeec5eb">#EEC5EB</color>
+    <color name="rgb153d3d">#153D3D</color>
+    <color name="rgbf5c500">#f5c500</color>
+
+    <color name="purple1">#49176D</color>
+    <color name="purple1trans">#8049176D</color>
+    <color name="purplehsv">#608e36c2</color>
+    <color name="purple1bright">#8c1cad</color>
+    <color name="purple1brightlight">#9850ad</color>
+    <color name="purple2">#ac83ca</color>
+    <color name="purple2light">#c7adda</color>
+    <color name="lilygray">#807F83</color>
+
+    <color name="light_grey">#eee</color>
+    <color name="vlight_grey">#f5f5f5</color>
+    <color name="dark_greyless">#ccc</color>
+    <color name="dark_greyless2">#bbb</color>
+    <color name="dark_grey">#999</color>
+    <color name="darker_grey_5">#555</color>
+    <color name="darker_grey">#444</color>
+    <color name="grey222">#222222</color>
+    <color name="grey333">#333</color>
+    <color name="greyddd">#ddd</color>
+    <color name="graywhite">#70e4e4e4</color>
+
+</resources>

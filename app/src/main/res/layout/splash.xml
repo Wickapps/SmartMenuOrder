@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:orientation="vertical"
+              android:layout_centerVertical="true"
+              android:background="@color/dark_greyless"
+              android:layout_height="fill_parent"
+              android:layout_gravity="center"
+              android:gravity="center">
+
+    <ImageView
+            android:id="@+id/Splash_Icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center"
+            android:padding="10dp">
+    </ImageView>
+
+    <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            />
+
+    <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Connecting"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:padding="10dip"
+            android:typeface="sans"
+            android:textColor="@color/black444"/>
+
+</LinearLayout>

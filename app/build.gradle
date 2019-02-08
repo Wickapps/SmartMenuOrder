@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.wickapps.android.smartmenuorder"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.06"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            def project = "SmartMenu_Order"
+            def version = variant.versionName
+            def ver2 = version.substring(0, 1) + version.substring(2, 4)
+            // Set the filename
+            outputFileName = project + ver2 + ".apk"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/acra-4.5.0.jar')
+    implementation files('libs/EpsonCom2.1.jar')
+    implementation("com.squareup.okhttp3:okhttp:3.12.0")
+    implementation "com.squareup.picasso:picasso:2.71828"
+}

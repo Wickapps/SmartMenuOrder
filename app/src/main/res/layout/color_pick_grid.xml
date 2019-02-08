@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/Grid_button"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:background="@color/light_grey">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+        <Button
+                android:id="@+id/butcp1"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF666666"
+                android:background="@color/rgb666"/>
+
+        <Button
+                android:id="@+id/butcp2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF444444"
+                android:background="@color/rgb444"/>
+
+        <Button
+                android:id="@+id/butcp3"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF222222"
+                android:background="@color/rgb222"/>
+
+        <Button
+                android:id="@+id/butcp4"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF000000"
+                android:background="@color/rgb000"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+        <Button
+                android:id="@+id/butcp5"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFFFFFFF"
+                android:background="@color/rgbfff"/>
+
+        <Button
+                android:id="@+id/butcp6"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFDDDDDD"
+                android:background="@color/rgbddd"/>
+
+        <Button
+                android:id="@+id/butcp7"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFBBBBBB"
+                android:background="@color/rgbbbb"/>
+
+        <Button
+                android:id="@+id/butcp8"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF999999"
+                android:background="@color/rgb999"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+        <Button
+                android:id="@+id/butcp9"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF49176D"
+                android:background="@color/purple1"/>
+
+        <Button
+                android:id="@+id/butcp10"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFAC83CA"
+                android:background="@color/purple2"/>
+
+        <Button
+                android:id="@+id/butcp11"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF9850AD"
+                android:background="@color/purple1brightlight"/>
+
+        <Button
+                android:id="@+id/butcp12"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFFF9711"
+                android:background="@color/orange"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+        <Button
+                android:id="@+id/butcp13"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFFF0000"
+                android:background="@color/rgbf00"/>
+
+        <Button
+                android:id="@+id/butcp14"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF5D9356"
+                android:background="@color/rgb5d9356"/>
+
+        <Button
+                android:id="@+id/butcp15"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF0000FF"
+                android:background="@color/rgb00f"/>
+
+        <Button
+                android:id="@+id/butcp16"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF0062AE"
+                android:background="@color/rgb0062ae"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+        <Button
+                android:id="@+id/butcp17"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFFED9B0"
+                android:background="@color/rgbfed9b0"/>
+
+        <Button
+                android:id="@+id/butcp18"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFF7F6A6"
+                android:background="@color/rgbf7f6a6"/>
+
+        <Button
+                android:id="@+id/butcp19"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF685446"
+                android:background="@color/rgb685446"/>
+
+        <Button
+                android:id="@+id/butcp20"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFEEC5EB"
+                android:background="@color/rgbeec5eb"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+        <Button
+                android:id="@+id/butcp21"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF153D3D"
+                android:background="@color/rgb153d3d"/>
+
+        <Button
+                android:id="@+id/butcp22"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFF5C500"
+                android:background="@color/rgbf5c500"/>
+
+        <Button
+                android:id="@+id/butcp23"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FF000000"
+                android:background="@color/rgb000"/>
+
+        <Button
+                android:id="@+id/butcp24"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dip"
+                android:tag="#FFFFFFFF"
+                android:background="@color/rgbfff"/>
+    </LinearLayout>
+
+</LinearLayout>

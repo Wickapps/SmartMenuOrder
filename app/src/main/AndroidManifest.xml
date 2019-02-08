@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.wickapps.android.smartmenuorder">
+
+    <application
+            android:icon="@mipmap/ic_launcher"
+            android:allowBackup="false"
+            android:theme="@style/AppTheme"
+            android:name="com.wickapps.android.smartmenuorder.MyApplication"
+            android:label="SmartMenu Order"
+            android:largeHeap="true"
+            tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+                android:name="com.wickapps.android.smartmenuorder.StartActivity"
+                android:theme="@style/ActionBar"
+                android:uiOptions="splitActionBarWhenNarrow"
+                android:screenOrientation="portrait"
+                android:configChanges="orientation"
+                android:launchMode="singleTop"
+                android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.wickapps.android.smartmenuorder.MenuActivity"
+                android:theme="@style/ActionBar"
+                android:screenOrientation="portrait"
+                android:configChanges="orientation"
+                android:launchMode="singleTop"
+                android:alwaysRetainTaskState="true"
+                android:noHistory="false"/>
+
+        <activity
+                android:name="com.wickapps.android.smartmenuorder.SettingsActivity"
+                android:theme="@style/ActionBar"
+                android:screenOrientation="portrait"
+                android:configChanges="orientation"
+                android:launchMode="singleTop"
+                android:noHistory="true"/>
+
+        <activity
+                android:name="org.acra.CrashReportDialog"
+                android:theme="@android:style/Theme.Dialog"
+                android:launchMode="singleInstance"
+                android:excludeFromRecents="true"
+                android:finishOnTaskLaunch="true"/>
+    </application>
+
+    <supports-screens
+            android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:anyDensity="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission
+            android:name="android.permission.CHANGE_CONFIGURATION"
+            tools:ignore="ProtectedPermissions"/>
+    <uses-permission
+            android:name="android.permission.READ_LOGS"
+            tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WIFI_LOCK"/>
+
+</manifest>

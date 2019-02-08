@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:id="@+id/LLmenuHeader"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_weight="1">
+
+                <Button
+                        android:id="@+id/butLangEng"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="ENG"
+                        android:textColor="@color/black444"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible"></Button>
+
+                <Button
+                        android:id="@+id/butLangAlt"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="中文"
+                        android:textColor="@color/black444"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible"></Button>
+            </LinearLayout>
+
+            <ImageView
+                    android:id="@+id/ImageView_Header"
+                    android:layout_height="92dip"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/logoblank"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="10dp"></ImageView>
+
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_weight="1">
+
+                <Button
+                        android:id="@+id/butQuickMsg"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="MSG"
+                        android:textColor="@color/black444"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"></Button>
+
+                <Button
+                        android:id="@+id/butInfo"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="INFO"
+                        android:textColor="@color/black444"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"></Button>
+
+                <Button
+                        android:id="@+id/butInnerExit"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="EXIT"
+                        android:textColor="@color/black444"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/LinearLayouty"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:weightSum="2.00"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:gravity="center"
+                android:paddingTop="3.0dip"
+                android:paddingBottom="12.0dip"
+                android:baselineAligned="false">
+
+            <LinearLayout
+                    android:id="@+id/LLmenu"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:orientation="horizontal"
+                    android:background="@drawable/text_but_selector_light"
+                    android:visibility="visible"
+                    android:layout_marginLeft="32.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="0.0dip"
+                    android:layout_marginBottom="0.0dip"
+                    android:weightSum="6.00"
+                    android:layout_weight="1.0"
+                    >
+
+                <TextView
+                        android:id="@+id/TextMenu"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="14dp"
+                        android:text=""
+                        android:gravity="center"
+                        android:padding="0dip"
+                        android:layout_margin="0dip"
+                        android:textColor="@color/black444"
+                        android:layout_gravity="center"
+                        android:layout_weight="5.0">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/LLorder"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:orientation="horizontal"
+                    android:background="@drawable/text_but_selector_light"
+                    android:visibility="visible"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="32.0dip"
+                    android:layout_marginTop="0.0dip"
+                    android:layout_marginBottom="0.0dip"
+                    android:weightSum="6.00"
+                    android:layout_weight="1.0"
+                    >
+
+                <TextView
+                        android:id="@+id/TextOrder"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text=""
+                        android:gravity="center"
+                        android:padding="0dip"
+                        android:layout_margin="0dip"
+                        android:layout_gravity="center"
+                        android:layout_weight="5.0">
+                </TextView>
+
+                <TextView
+                        android:id="@+id/numItems"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textStyle="normal"
+                        android:text=""
+                        android:gravity="center"
+                        android:padding="0dip"
+                        android:layout_margin="0dip"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        ></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

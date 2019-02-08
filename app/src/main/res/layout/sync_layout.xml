@@ -1,0 +1,2278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/darker_grey_5"
+              android:orientation="vertical">
+    <!--
+        <include
+            layout="@layout/menu_tabs"
+            android:id="@+id/header"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+    -->
+    <ScrollView
+            android:id="@+id/ScrollViewSync"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical">
+
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="20dip"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/AboutAppName"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                </TextView>
+
+                <TextView
+                        android:id="@+id/AboutVersion"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                </TextView>
+
+                <TextView
+                        android:id="@+id/AboutSource"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                </TextView>
+
+                <TextView
+                        android:id="@+id/AboutServerIP"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                </TextView>
+
+                <TextView
+                        android:id="@+id/AboutSmartMenuID"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                </TextView>
+
+                <TextView
+                        android:id="@+id/AboutDeviceIP"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                </TextView>
+
+                <TextView
+                        android:id="@+id/AboutDeviceId"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                </TextView>
+
+                <TextView
+                        android:id="@+id/AboutMenuVersion"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:id="@+id/llVVV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_grey_tight_inner"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dip"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:gravity="right"
+                            android:layout_height="wrap_content"
+                            android:text="Connection Status"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="0dp"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:layout_marginRight="0dp"
+                            android:textSize="10sp"></TextView>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_gravity="right"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label0a"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="Wi-Fi"
+                                android:textSize="14dp"></TextView>
+
+                        <ImageView
+                                android:id="@+id/lit0a"
+                                android:background="@drawable/presence_invisible"
+                                android:layout_marginLeft="10dp"
+                                android:visibility="visible"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="Server"
+                                    android:textSize="14dp"></TextView>
+
+                            <TextView
+                                    android:id="@+id/label1a2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="Server IP"
+                                    android:textSize="12dp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                                android:id="@+id/lit1aServer"
+                                android:background="@drawable/presence_invisible"
+                                android:layout_marginLeft="10dp"
+                                android:visibility="visible"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/labelPOS1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="POS"
+                                    android:textSize="14dp"></TextView>
+
+                            <TextView
+                                    android:id="@+id/labelPOS1a"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="POS IP"
+                                    android:textSize="12dp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                                android:id="@+id/litPOS1"
+                                android:background="@drawable/presence_invisible"
+                                android:layout_marginLeft="10dp"
+                                android:visibility="visible"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/labelTO"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="TakeOut"
+                                    android:textSize="14dp">
+                            </TextView>
+
+                            <TextView
+                                    android:id="@+id/labelTOa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="Takeout IP"
+                                    android:textSize="12dp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                                android:id="@+id/litTO"
+                                android:background="@drawable/presence_invisible"
+                                android:layout_marginLeft="10dp"
+                                android:visibility="visible"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/label2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="Printer 1"
+                                    android:textSize="14dp">
+                            </TextView>
+
+                            <TextView
+                                    android:id="@+id/label2a"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="Printer 1 IP"
+                                    android:textSize="12dp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                                android:id="@+id/lit2a"
+                                android:background="@drawable/presence_invisible"
+                                android:layout_marginLeft="10dp"
+                                android:visibility="visible"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/label3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="Printer 2"
+                                    android:textSize="14dp">
+                            </TextView>
+
+                            <TextView
+                                    android:id="@+id/label3a"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="Printer 2 IP"
+                                    android:textSize="12dp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                                android:id="@+id/lit3a"
+                                android:background="@drawable/presence_invisible"
+                                android:layout_marginLeft="10dp"
+                                android:visibility="visible"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/label4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="Printer 3"
+                                    android:textSize="14dp">
+                            </TextView>
+
+                            <TextView
+                                    android:id="@+id/label4a"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="Printer 3 IP"
+                                    android:textSize="12dp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                                android:id="@+id/lit4a"
+                                android:background="@drawable/presence_invisible"
+                                android:layout_marginLeft="10dp"
+                                android:visibility="visible"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <Button
+                            android:id="@+id/butRefreshIP"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Refresh"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_marginTop="8dip"
+                            android:visibility="visible"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            ></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/llSettingsControl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_grey_tight_inner"
+                        android:padding="3dp"
+                        android:layout_marginTop="15dip"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:gravity="right"
+                            android:layout_height="wrap_content"
+                            android:text="Settings Control"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:layout_marginRight="0dp"
+                            android:textSize="10sp"></TextView>
+
+                    <LinearLayout
+                            android:id="@+id/llc"
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/butSaveBack"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Save Changes"
+                                android:textSize="14dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:textStyle="normal"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:gravity="center"></Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/llBack"
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/butBackBack"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Exit"
+                                android:textSize="14dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:textStyle="normal"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:gravity="center"></Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/llupload"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/butUpload"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Upload to Server"
+                                android:textSize="14dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:textStyle="normal"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:gravity="center"></Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/butReload"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Reload from Server"
+                                android:textSize="14dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:textStyle="normal"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:gravity="center"></Button>
+                    </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/textLoad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="200dp"
+                            android:layout_marginTop="5dip"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:typeface="sans"
+                            android:visibility="visible"
+                            android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/llYYY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_grey_tight_inner"
+                        android:padding="3dp"
+                        android:layout_marginBottom="14dip"
+                        android:layout_marginTop="14dip"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:gravity="right"
+                            android:layout_height="wrap_content"
+                            android:text="General Settings"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="0dp"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:layout_marginRight="0dp"
+                            android:textSize="10sp"></TextView>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelCNtext"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="Name"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/customerName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="30"
+                                android:maxWidth="200dp"
+                                android:inputType="textNoSuggestions"
+                                android:text=""
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelCNBtext"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="Name Brief"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/customerNameBrief"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="30"
+                                android:maxWidth="200dp"
+                                android:inputType="textNoSuggestions"
+                                android:text=""
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelSAtext"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="Address"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/storeAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="200"
+                                android:maxWidth="200dp"
+                                android:inputType="textNoSuggestions"
+                                android:text=""
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelct"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Cloud Type"
+                                android:gravity="left"
+                                android:layout_gravity="center"
+                                android:paddingRight="10dp"
+                                android:textSize="14dp">
+                        </TextView>
+
+                        <RadioGroup
+                                android:id="@+id/ctRG"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp">
+
+                            <RadioButton
+                                    android:id="@+id/ctBut1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/resize_button"
+                                    android:textColor="@color/white"
+                                    android:visibility="gone"
+                                    android:textSize="14dp"
+                                    android:text="Private"/>
+
+                            <RadioButton
+                                    android:id="@+id/ctBut2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/resize_button"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp"
+                                    android:text="Public"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label10"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Start English"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/checkEng"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <!-- Set this to visible=gone so it wont be used.	-->
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label12"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Check Wi-Fi"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/checkWifi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <!-- Set this to visible=gone so it wont be used.	-->
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label14"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Auto Take Out Table"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/autoTakeOut"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label15"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Auto Menu Reload"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/autoMenuReload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelFSFtext"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="Font Scale Factor [0-10]"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/fontScaleFactor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:inputType="number"
+                                android:text=""
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelSOMtext"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="Send Order Mode [1-3]"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/sendOrderMode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:inputType="number"
+                                android:text=""
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labeDISSPEC"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Display Specials"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/displaySpecials"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelSHOWGUESTS"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Choose Guests"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/displayGuests"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label16"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Show Big Exit"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/showBigExit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelACT"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Allow Change Table"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/allowChangeTable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label13"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Show Pictures"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/showPics"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Show Dish Ratings"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/showRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Show Dish Badges"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/showBadges"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label17"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Show Dish Info"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/showDishInfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label18"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Show Dish Feedback"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/showDishFeedback"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label19"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Show Dish Descriptions"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/showDishDescription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label20"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Show Zoom Picture"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/showZoomPicture"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:text="Printers 1/2/3 Enabled"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/pos1enable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+
+                        <CheckBox
+                                android:id="@+id/pos2enable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+
+                        <CheckBox
+                                android:id="@+id/pos3enable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:gravity="right"
+                            android:layout_height="wrap_content"
+                            android:text="IP Settings"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="0dp"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:layout_marginRight="0dp"
+                            android:textSize="10sp"></TextView>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelServerIPtext"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="Server IP"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/serverIP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="30"
+                                android:inputType="textUri"
+                                android:text=""
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelipMtext"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="POS IP"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/ipmd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:inputType="textUri"
+                                android:text="192.168.1.71"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:visibility="gone"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelMDItext"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="POS ID"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/masterDeviceId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:maxWidth="200dp"
+                                android:inputType="textNoSuggestions"
+                                android:text=""
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelipTOtext"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="TakeOut IP"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/ipto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:inputType="textUri"
+                                android:text="192.168.1.70"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelip1text"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="Printer 1 IP"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/ip1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:inputType="textUri"
+                                android:text="192.168.1.30"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelip2text"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:text="Printer 2 IP"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/ip2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:inputType="textUri"
+                                android:text="192.168.1.31"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelip3text"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:text="Printer 3 IP"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp"></TextView>
+
+                        <EditText
+                                android:id="@+id/ip3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:inputType="textUri"
+                                android:text="192.168.1.32"
+                                android:layout_gravity="center"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/header33"
+                            android:layout_width="fill_parent"
+                            android:gravity="right"
+                            android:layout_height="wrap_content"
+                            android:text="Printer 1"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="0dp"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:layout_marginRight="0dp"
+                            android:textSize="10sp"></TextView>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelpt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Printer Type"
+                                android:paddingLeft="0dp"
+                                android:paddingRight="10dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <RadioGroup
+                                android:id="@+id/pt"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2">
+
+                            <RadioButton
+                                    android:id="@+id/p1ptBut1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:text="Epson"/>
+
+                            <RadioButton
+                                    android:id="@+id/p1ptBut2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:text="GPrinter"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label145"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Print Logo"
+                                android:paddingLeft="0dp"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/pos1logo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelpdid"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Print Dish Seq #'s"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/printDishID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelP1C"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Copies [1-3]"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <EditText
+                                android:id="@+id/etP1C"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="10"
+                                android:inputType="number"
+                                android:text=""
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelp1pst"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Print Sent Time"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/p1PrintSentTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelAOD"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Auto Open Drawer"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/autoOpenDrawer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/header34"
+                            android:layout_width="fill_parent"
+                            android:gravity="right"
+                            android:layout_height="wrap_content"
+                            android:text="Printer 2"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="0dp"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:layout_marginRight="0dp"
+                            android:textSize="10sp"></TextView>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label2pt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Printer Type"
+                                android:paddingLeft="0dp"
+                                android:paddingRight="10dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <RadioGroup
+                                android:id="@+id/pt2"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2">
+
+                            <RadioButton
+                                    android:id="@+id/p2ptBut1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/white"
+                                    android:text="Epson"/>
+
+                            <RadioButton
+                                    android:id="@+id/p2ptBut2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/white"
+                                    android:text="GPrinter"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelp221"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Kitchen Codes"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/p2KitchenCodes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelp2pst"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Print Sent Time"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/p2PrintSentTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelp2fcats"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="0dp"
+                                android:textColor="@color/white"
+                                android:text="Filter"
+                                android:textSize="14sp"></TextView>
+
+                        <Button
+                                android:id="@+id/butP2FilterCats"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:maxWidth="180dip"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:drawableRight="@drawable/arrow_down"
+                                android:visibility="visible"
+                                android:textStyle="normal"
+                                android:paddingLeft="0.0dip"
+                                android:paddingRight="10.0dip"
+                                android:singleLine="true"
+                                android:enabled="true"
+                                android:layout_gravity="center_horizontal"></Button>
+                    </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/headerp334"
+                            android:layout_width="fill_parent"
+                            android:gravity="right"
+                            android:layout_height="wrap_content"
+                            android:text="Printer 3"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="0dp"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:layout_marginRight="0dp"
+                            android:textSize="10sp"></TextView>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label3pt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Printer Type"
+                                android:paddingLeft="0dp"
+                                android:paddingRight="10dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <RadioGroup
+                                android:id="@+id/pt3"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2">
+
+                            <RadioButton
+                                    android:id="@+id/p3ptBut1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/white"
+                                    android:text="Epson"/>
+
+                            <RadioButton
+                                    android:id="@+id/p3ptBut2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/white"
+                                    android:text="GPrinter"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelp3kc"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Kitchen Codes"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/p3KitchenCodes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelp3pst"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Print Sent Time"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <CheckBox
+                                android:id="@+id/p3PrintSentTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:checked="false">
+                        </CheckBox>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/labelp3fcats"
+                                android:layout_width="wrap_content"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="0dp"
+                                android:textColor="@color/white"
+                                android:text="Filter"
+                                android:textSize="14sp"></TextView>
+
+                        <Button
+                                android:id="@+id/butP3FilterCats"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:maxWidth="180dip"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:drawableRight="@drawable/arrow_down"
+                                android:visibility="visible"
+                                android:textStyle="normal"
+                                android:paddingLeft="10.0dip"
+                                android:paddingRight="10.0dip"
+                                android:singleLine="true"
+                                android:enabled="true"
+                                android:layout_gravity="center_horizontal"></Button>
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:gravity="right"
+                            android:layout_height="wrap_content"
+                            android:text="Color Settings"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="0dp"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:layout_marginRight="0dp"
+                            android:textSize="10sp"></TextView>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="140dp"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Font"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <Button
+                                android:id="@+id/butFontColor"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp">
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="140dp"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Background"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <Button
+                                android:id="@+id/butBackColor"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp">
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="140dp"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Header"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <Button
+                                android:id="@+id/butHeadColor"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp">
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="140dp"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Button Font"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <Button
+                                android:id="@+id/butButFontColor"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp">
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="140dp"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Button"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <Button
+                                android:id="@+id/butMainButtonColor"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp">
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="140dp"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Selected Button Font"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <Button
+                                android:id="@+id/butSelButFontColor"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp">
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label22"
+                                android:layout_width="140dp"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Selected Button"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <Button
+                                android:id="@+id/butSelButColor"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp">
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label23"
+                                android:layout_width="140dp"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Label Font"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <Button
+                                android:id="@+id/butLabelFontColor"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp">
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:paddingBottom="30dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/label24"
+                                android:layout_width="140dp"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Label"
+                                android:layout_marginRight="10dp"
+                                android:textSize="14sp">
+                        </TextView>
+
+                        <Button
+                                android:id="@+id/butLabelColor"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp">
+                        </Button>
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:gravity="right"
+                            android:layout_height="wrap_content"
+                            android:text="Order Management"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:layout_marginRight="0dp"
+                            android:textSize="10sp"></TextView>
+
+                    <LinearLayout
+                            android:id="@+id/llunsent"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:layout_marginBottom="20dip"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/butUnsent"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Unsent Orders"
+                                android:textSize="14dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:textStyle="normal"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:gravity="center"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

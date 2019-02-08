@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/LLLineTop"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="@drawable/popup"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/lineTop"
+                android:background="@drawable/text_but_selector_light"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:visibility="visible"
+                android:text=""
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="0dip"
+                android:layout_margin="2dp"
+                android:textColor="@color/white"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5.0">
+
+        <ImageView
+                android:id="@+id/foodPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popuplt"
+                android:scaleType="fitXY"
+                android:clickable="false"
+                android:focusable="false"
+                android:padding="2dp"
+                android:layout_gravity="center"/>
+
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="2dip"
+                android:paddingBottom="2dip"
+                android:paddingLeft="5dip"
+                android:layout_weight="5.0"
+                android:layout_width="fill_parent">
+
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    >
+
+                <TextView
+                        android:id="@+id/list_complex_title"
+                        android:layout_width="0dip"
+                        android:layout_height="50dp"
+                        android:textColor="@color/grey222"
+                        android:layout_weight="1"
+                        android:padding="0dip"
+                        android:layout_gravity="center_vertical|left"
+                        android:gravity="center_vertical|left"
+                        android:text="Test Line 1"
+                        android:textSize="19px"
+                        android:textStyle="bold"
+                        />
+
+                <TextView
+                        android:id="@+id/list_complex_healthy"
+                        android:layout_width="48px"
+                        android:layout_height="48px"
+                        android:background="@drawable/heart"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="13px"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        />
+
+                <TextView
+                        android:id="@+id/list_complex_popular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/popuporange"
+                        android:height="30dip"
+                        android:paddingLeft="4dip"
+                        android:paddingRight="4dip"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical|right"
+                        android:text="Popular"
+                        android:visibility="visible"
+                        android:gravity="center_vertical|center"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        />
+
+                <TextView
+                        android:id="@+id/list_complex_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/popupgreen"
+                        android:height="30dip"
+                        android:paddingLeft="4dip"
+                        android:paddingRight="4dip"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical|right"
+                        android:text="New"
+                        android:visibility="visible"
+                        android:gravity="center_vertical|center"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        />
+
+                <TextView
+                        android:id="@+id/list_complex_pricenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/popup"
+                        android:height="30dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical|right"
+                        android:text="88"
+                        android:gravity="center_vertical|center"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="4dp"
+                        />
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/list_complex_caption"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey222"
+                    android:text="Test Line 2"
+                    android:textSize="17px"
+                    android:padding="0dip"
+                    />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
